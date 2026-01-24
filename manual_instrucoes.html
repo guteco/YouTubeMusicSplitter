@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual do Usuário - YouTube Music Splitter</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: #d32f2f;
+        }
+
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        code {
+            background-color: #eee;
+            padding: 2px 5px;
+            border-radius: 3px;
+            font-family: monospace;
+        }
+
+        .step {
+            margin-bottom: 20px;
+        }
+
+        .step-title {
+            font-weight: bold;
+            font-size: 1.1em;
+            color: #555;
+        }
+
+        .note {
+            background-color: #fff3cd;
+            border-left: 5px solid #ffc107;
+            padding: 10px;
+            margin: 15px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>🎵 YouTube Music Splitter - Manual do Usuário</h1>
+        <p>Bem-vindo ao <strong>YouTube Music Splitter</strong>. Este guia vai te ajudar a instalar e usar o programa
+            para baixar suas músicas favoritas.</p>
+
+        <hr>
+
+        <h2>🛠️ Instalação</h2>
+        <div class="step">
+            <div class="step-title">Passo 1: Instale o Python</div>
+            <p>Se você ainda não tem, baixe e instale o Python em <a href="https://www.python.org/downloads/"
+                    target="_blank">python.org</a>. Lembre-se de marcar a opção <strong>"Add Python to PATH"</strong>
+                durante a instalação.</p>
+        </div>
+        <div class="step">
+            <div class="step-title">Passo 2: Instale as Dependências</div>
+            <p>Abra o terminal (Prompt de Comando) na pasta do projeto e execute:</p>
+            <code>pip install -r requirements.txt</code>
+        </div>
+
+        <hr>
+
+        <h2>🎧 Como Baixar Músicas</h2>
+
+        <h3>Opção 1: Tracklist (Álbum Completo com Capítulos)</h3>
+        <p>Use esta opção para vídeos longos que contêm várias músicas (como "Full Album" ou "Mix").</p>
+        <ol>
+            <li>Abra o programa clicando duas vezes em <code>gui.py</code> (ou rodando <code>python gui.py</code>).</li>
+            <li>Cole o link do YouTube no campo "URL do Vídeo".</li>
+            <li>Mantenha a opção <strong>"Detectar Capítulos Automaticamente"</strong> marcada.</li>
+            <li>Clique em <strong>Iniciar Processamento</strong>.</li>
+            <li>O programa vai baixar e cortar cada música separadamente na pasta <code>downloads</code>.</li>
+        </ol>
+
+        <div class="note">
+            <strong>Dica:</strong> Se o vídeo não tiver capítulos marcados no YouTube, desmarque a caixa automática e
+            cole a lista de tempos manualmente (Ex: <code>0:00 - Intro</code>).
+        </div>
+
+        <h3>Opção 2: Playlist</h3>
+        <p>Use esta opção para baixar uma playlist inteira criada no YouTube.</p>
+        <ol>
+            <li>Selecione a aba <strong>"Playlist (YouTube)"</strong> no topo do programa.</li>
+            <li>Cole o link da playlist.</li>
+            <li>Clique em <strong>Baixar Playlist Inteira</strong>.</li>
+        </ol>
+
+        <hr>
+
+        <h2>❓ Perguntas Frequentes</h2>
+        <h3>O que é o FFmpeg?</h3>
+        <p>É uma ferramenta necessária para converter os vídeos em áudio MP3 de alta qualidade. Na primeira vez que você
+            abrir o programa, ele verificará se você tem o FFmpeg. Se não tiver, ele oferecerá para baixar e configurar
+            tudo automaticamente para você.</p>
+
+        <h3>Onde ficam as músicas?</h3>
+        <p>Uma pasta chamada <code>downloads</code> será criada onde o programa está localizado. Dentro dela, você
+            encontrará subpastas com o nome do álbum ou playlist.</p>
+
+    </div>
+    <div style="text-align: center; margin-top: 20px; font-size: 0.9em; color: #777;">
+        Desenvolvido por Augusto Severo - @guteco e Gemini - We accept Pizza 🍕
+    </div>
+</body>
+
+</html>
